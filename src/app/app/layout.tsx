@@ -241,7 +241,7 @@ export default function AppLayout({
             <span>Settings</span>
           </button>
 
-          <div className="flex items-center gap-2 px-2 py-1.5 mt-1 rounded hover:bg-[var(--hover-surface)] cursor-pointer">
+          <div className="flex items-center gap-2 px-2 py-1.5 mt-1 rounded hover:bg-[var(--hover-surface)] cursor-pointer" onClick={handleLogout}>
             <div className="w-8 h-8 bg-[var(--accent)] rounded-full flex items-center justify-center">
               <span className="text-xs font-semibold text-white">
                 {user?.display_name ? getInitials(user.display_name) : "U"}
